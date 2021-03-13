@@ -30,7 +30,7 @@ app.get("/seed", (req, res) => {
 });
 app.get("/setup", (req, resp) => {
   require("../config/setup");
-  resp.send({ message: "Database Matcha created succefully" });
+  resp.send({ message: "Database ChickFling created succefully" });
 });
 
 /* Socket.io */

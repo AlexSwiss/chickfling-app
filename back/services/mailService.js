@@ -13,13 +13,13 @@ module.exports = {
       username +
       `,</p>
         <br>
-        <p>We have received your registration on Matcha.</p>
+        <p>We have received your registration on ChickFling.</p>
         <p>We hope you will find what you are looking for on our platform.</p>
-        <p>To get started on Matcha, please make sure to validate the following link: <a href="` +
+        <p>To get started on ChickFling, please make sure to validate the following link: <a href="` +
       link +
       `">Click here</a></p>
         <br>
-        <p>See you soon on Matcha.</p>
+        <p>See you soon on ChickFling.</p>
       </body>
     </html>`;
 
@@ -30,9 +30,9 @@ module.exports = {
     });
     transporter.sendMail(
       {
-        from: "registration@matcha.com",
+        from: "registration@ChickFling.com",
         to: mail,
-        subject: "Welcome to Matcha",
+        subject: "Welcome to ChickFling",
         html: message,
         contentType: "text/html"
       },
@@ -54,13 +54,13 @@ module.exports = {
       username +
       `,</p>
         <br>
-        <p>We have received your password reset request on Matcha.</p>
+        <p>We have received your password reset request on ChickFling.</p>
         <p>Don't worry we got you covered ;)</p>
-        <p>To reset your password on Matcha, please visit the following link: <a href="` +
+        <p>To reset your password on ChickFling, please visit the following link: <a href="` +
       link +
       `">Click here</a></p>
         <br>
-        <p>See you soon on Matcha.</p>
+        <p>See you soon on ChickFling.</p>
       </body>
     </html>`;
 
@@ -78,7 +78,7 @@ module.exports = {
     var mailOptions = {
       from: "alexyikeh@gmail.com",
       to: mail,
-      subject: "Matcha - Reset password",
+      subject: "ChickFling - Reset password",
       text: message,
       contentType: "text/html"
     };

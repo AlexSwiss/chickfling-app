@@ -505,7 +505,7 @@ class NavBar extends Component {
         <nav>
           <div className="nav-wrapper">
             <NavLink to="/" className="brand-logo">
-              <img className="header-logo" src={logo} alt="" />
+              <img className="header-logo" src={logo} alt="" /> 
             </NavLink>
             <NavLinks />
           </div>

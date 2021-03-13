@@ -1,4 +1,4 @@
-# 42_www_matcha
+# 42_www_ChickFling
 Creating a dating site using React, Node JS and MySQL
 
 ## Summary
@@ -63,7 +63,7 @@ See Trello board [here](https://trello.com/b/vxxZB9oL/42-matcha)
 
 ### Features
 
-My Matcha project handles:
+My ChickFling project handles:
 * DB creation script
 * User creation and authentication using token
 * Pictures upload and default profile picture
@@ -205,7 +205,7 @@ This allows us to return a list of profiles that user might be interested in, or
 
 ## Profiles search
 
-Just like the profiles discovery feature, the search will return a list of user and give user the ability to do a global search over the profiles registered on Matcha app. The search page is very similar to what can be found on the profiles discovery one but he has access to the full list of profiles.
+Just like the profiles discovery feature, the search will return a list of user and give user the ability to do a global search over the profiles registered on ChickFling app. The search page is very similar to what can be found on the profiles discovery one but he has access to the full list of profiles.
 
 ![Profiles search](https://user-images.githubusercontent.com/45239771/66851379-e7789a00-ef7a-11e9-805d-f26cc3c3e6d2.png)<p align=center><i>Profiles search</i></p>
 
@@ -317,4 +317,4 @@ command -> `npm run dev` from the `back` folder, it will start both.
 Then, access the website using the following URL: https://localhost:3000/users/login
 
 Enjoy matches!
-[<p align=center>Go up<p>](#42_www_matcha)
+[<p align=center>Go up<p>](#42_www_ChickFling)

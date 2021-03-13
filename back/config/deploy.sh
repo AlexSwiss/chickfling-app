@@ -1,5 +1,5 @@
 #!/bin/sh
-path=$(cd $( dirname ${BASH_SOURCE[0]}) && pwd )/matcha_seed.sql;
+path=$(cd $( dirname ${BASH_SOURCE[0]}) && pwd )/ChickFling_seed.sql;
 
 cd //Users/lcordeno/Applications/MAMP/mysql/bin;
 

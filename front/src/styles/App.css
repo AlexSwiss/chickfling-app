@@ -627,7 +627,7 @@ input[type="email"]:not(.browser-default):focus:not([readonly]) {
 }
 
 .offline-icon {
-  color: red;
+  color: rgb(226, 11, 11);
 }
 
 .controls {
@@ -851,7 +851,7 @@ button:focus {
   position: relative;
   padding: 5px;
   margin-left: 10px;
-  border: 2px solid red;
+  border: 2px solid rgb(219, 18, 18);
   border-top-right-radius: 10px;
   text-align: left;
   word-break: break-word;
@@ -1337,7 +1337,7 @@ textarea:not(.browser-default):focus:not([readonly]) + label {
 }
 
 .chip {
-  background-color: #b61d5a !important;
+  background-color: #f0609e !important;
   cursor: pointer;
 }
 
