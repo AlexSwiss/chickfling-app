@@ -9,13 +9,7 @@ var chatController = require("../controllers/chatController");
 var userController = require("../controllers/userController");
 var userModel = require("../models/userModel");
 var Seed = require("../config/seed");
-/* Listenning port */
 
-const PORT = 8080;
-
-http.listen(PORT, () => {
-  console.log("Listening on port: ", PORT);
-});
 
 /* Middlewares */
 app.use(bodyParser.json({ limit: "10mb", extended: true }));
@@ -122,4 +116,22 @@ nsp.on("connection", socket => {
       }
     }
   });
+});
+
+if(process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'front', 'build')));
+
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'front', 'build', 'index.html'))
+  });
+
+}
+
+/* Listenning port */
+
+const PORT = process.env.PORT || 8080;
+
+http.listen(PORT, () => {
+  console.log("Listening on port: ", PORT);
 });
