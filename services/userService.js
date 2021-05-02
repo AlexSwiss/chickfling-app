@@ -147,7 +147,7 @@ module.exports = {
     data.push(uniqid);
     var created = await userModel.createOne(data);
     if (created) {
-      var link = "https://localhost:3000/users/register/" + uniqid;
+      var link = "https://chickfling.herokuapp.com/users/register/" + uniqid;
       await sendmail.registerMail(data[3], data[2], link);
       return { status: "User created with success" };
     }
@@ -160,7 +160,7 @@ module.exports = {
     ).toString(16);
     var created = await userModel.setPasswordResetKey(data[0]["id"], uniqid);
     if (created) {
-      var link = "https://localhost:3000/users/reset-password/" + uniqid;
+      var link = "https://chickfling.herokuapp.com/users/reset-password/" + uniqid;
       await sendmail.forgotPasswordMail(
         data[0]["mail"],
         data[0]["username"],
