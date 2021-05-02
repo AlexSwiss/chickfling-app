@@ -1,7 +1,8 @@
 const express = require("express");
 const http = require("http");
 const app = express();
-const io = require("socket.io")(app);
+var server = http.createServer(app);
+const io = require("socket.io").listen(server);
 let bodyParser = require("body-parser");
 let userRoute = require("./routes/userRoute");
 var chatRoute = require("./routes/chatRoute");
@@ -134,6 +135,6 @@ if(process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 8080;
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log("Listening on port: ", PORT);
 });
