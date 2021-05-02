@@ -1,6 +1,7 @@
 const express = require("express");
-var http = require("http");
-var io = require("socket.io");
+const http = require("http");
+const app = express();
+const io = require("socket.io")(app);
 let bodyParser = require("body-parser");
 let userRoute = require("./routes/userRoute");
 var chatRoute = require("./routes/chatRoute");
@@ -11,7 +12,6 @@ var userModel = require("./models/userModel");
 var Seed = require("./config/seed");
 const path = require("path");
 
-const app = express();
 
 /* Middlewares */
 app.use(bodyParser.json({ limit: "10mb", extended: true }));
