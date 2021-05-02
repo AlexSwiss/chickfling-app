@@ -1,6 +1,6 @@
 const express = require("express");
 var http = require("http");
-var io = require("socket.io").listen(http);
+var io = require("socket.io");
 let bodyParser = require("body-parser");
 let userRoute = require("./routes/userRoute");
 var chatRoute = require("./routes/chatRoute");
