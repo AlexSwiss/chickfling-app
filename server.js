@@ -1,5 +1,5 @@
 const express = require("express");
-var http = require("http").Server(app);
+var http = require("http");
 var io = require("socket.io").listen(http);
 let bodyParser = require("body-parser");
 let userRoute = require("./routes/userRoute");
