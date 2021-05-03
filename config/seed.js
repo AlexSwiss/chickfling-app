@@ -52,7 +52,7 @@ module.exports = {
                 if (!tags.includes(randomTag)) {
                     tags.push(randomTag);
                     tagModel.addOne(uid, randomTag);
-                }
+                } 
             };
         }
         console.log("Database has been populated!");
