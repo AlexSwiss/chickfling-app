@@ -321,7 +321,8 @@ module.exports = {
       city,
       latitude,
       longitude
-    ]);
+    ]).catch(err)
+    console.log(err)
     if (ret.status === "User created with success")
       return res.status(201).send(ret.status);
     else return res.status(400).send(ret.status);
