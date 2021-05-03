@@ -32,7 +32,7 @@ module.exports = {
                 moment().format().substr(0, 10)
             ])
 
-            request(`https://maps.googleapis.com/maps/api/geocode/json?address=${body.results[k].location.city.charAt(0).toUpperCase()+body.results[k].location.city.substring(1)}&key=AIzaSyCrQGnPtopWTSK9joyPAxlEGcl535KlQQQ`, async (err, resp, body) => {
+            request(`https://maps.googleapis.com/maps/api/geocode/json?address=${body.results[k].location.city.charAt(0).toUpperCase()+body.results[k].location.city.substring(1)}&key=AIzaSyCRkBZzD_Eyumuipt6Rv-5pj5XhQkF2zOU`, async (err, resp, body) => {
                 body = JSON.parse(body);
                // console.log(body.results[0].geometry.location);
                 await userModel.updateData(uid, {
