@@ -1,6 +1,5 @@
 const express = require("express");
 const http = require("http");
-const app = express();
 var server = http.createServer(app);
 const io = require("socket.io").listen(server);
 let bodyParser = require("body-parser");
@@ -12,6 +11,8 @@ var userController = require("./controllers/userController");
 var userModel = require("./models/userModel");
 var Seed = require("./config/seed");
 const path = require("path");
+
+const app = express();
 
 
 /* Middlewares */
