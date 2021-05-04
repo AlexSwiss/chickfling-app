@@ -291,9 +291,9 @@ module.exports = {
     var mail = req.body.email;
     var pwd1 = req.body.pwd1;
     var pwd2 = req.body.pwd2;
-    // var city = req.body.location["address"]["city"];
-    // var latitude = req.body.location["coords"]["latitude"];
-    // var longitude = req.body.location["coords"]["longitude"];
+    var city = req.body.location["address"]["city"];
+    var latitude = req.body.location["coords"]["latitude"];
+    var longitude = req.body.location["coords"]["longitude"];
 
     //Check inputs
     var err;
@@ -319,9 +319,9 @@ module.exports = {
       username,
       mail,
       pwd1,
-      // city,
-      // latitude,
-      // longitude
+      city,
+      latitude,
+      longitude
     ]);
     if (ret.status === "User created with success")
       return res.status(201).send(ret.status);
