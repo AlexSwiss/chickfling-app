@@ -24,9 +24,10 @@ module.exports = {
     </html>`;
 
     let transporter = nodemailer.createTransport({
-      sendmail: true,
-      newline: "unix",
-      path: "/usr/sbin/sendmail"
+      service: 'gmail',
+      type: "SMTP",
+      host: "smtp.gmail.com",
+      secure: true,
     });
     transporter.sendMail(
       {
