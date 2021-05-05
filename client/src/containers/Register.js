@@ -314,7 +314,7 @@ class Register extends Component {
       language: "en",
       google: {
         version: "3",
-        key: "AIzaSyCrQGnPtopWTSK9joyPAxlEGcl535KlQQQ"
+        key: "AIzaSyCdr8vf-BHgnuGQOUUNkVoXzhSDMdB9gQw"
       }
     });
 
