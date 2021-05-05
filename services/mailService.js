@@ -30,7 +30,7 @@ module.exports = {
     });
     transporter.sendMail(
       {
-        from: "registration@ChickFling.com",
+        from: "alexyikeh@gmail.com",
         to: mail,
         subject: "Welcome to ChickFling",
         html: message,
