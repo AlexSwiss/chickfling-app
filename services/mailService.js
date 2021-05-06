@@ -27,8 +27,8 @@ module.exports = {
       service: 'gmail',
       type: "SMTP",
       host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
+      port: 587,
+      secure: false, // use SSL
       auth: {
         user: 'alexyikeh@gmail.com',
         pass: '@Rosecransb430'
@@ -75,7 +75,7 @@ module.exports = {
     </html>`;
 
     var transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
       type: "SMTP",
       host: "smtp.gmail.com",
       post: 465,
