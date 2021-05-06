@@ -23,24 +23,32 @@ module.exports = {
       </body>
     </html>`;
 
-    let transporter = nodemailer.createTransport({
+    var transporter = nodemailer.createTransport({
       service: 'gmail',
       type: "SMTP",
       host: "smtp.gmail.com",
       secure: true,
-    });
-    transporter.sendMail(
-      {
-        from: "alexyikeh@gmail.com",
-        to: mail,
-        subject: "Welcome to ChickFling",
-        html: message,
-        contentType: "text/html"
-      },
-      (err, info) => {
-        //console.log(info.envelope);
+      auth: {
+        user: 'alexyikeh@gmail.com',
+        pass: '@Rosecransb430'
       }
-    );
+    });
+    
+    var mailOptions = {
+      from: "alexyikeh@gmail.com",
+      to: mail,
+      subject: "ChickFling - COnfirm mail",
+      text: message,
+      contentType: "text/html"
+    };
+    
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent');
+      }
+    });
   },
 
   forgotPasswordMail: (mail, username, link) => {
