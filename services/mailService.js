@@ -27,6 +27,7 @@ module.exports = {
       service: 'gmail',
       type: "SMTP",
       host: "smtp.gmail.com",
+      port: 465,
       secure: true,
       auth: {
         user: 'alexyikeh@gmail.com',
@@ -77,6 +78,7 @@ module.exports = {
       service: 'gmail',
       type: "SMTP",
       host: "smtp.gmail.com",
+      post: 465,
       secure: true,
       auth: {
         user: 'alexyikeh@gmail.com',
