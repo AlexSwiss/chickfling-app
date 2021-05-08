@@ -226,11 +226,9 @@ To run the project, you will also need to install some required packages and dep
 * Install backend packages/dependencies using command -> `npm i` inside the `back` folder
 * Install frontend packages/dependencies using command -> `npm i` inside the `front` folder
 
-### Start servers and website
+### website
 
-After having done both previous steps, you can start both MySQL Database from Bitnami software and Node JS server/React app using the following
-command -> `npm run dev` from the `back` folder, it will start both.
-Then, access the website using the following URL: https://localhost:3000/users/login
+access the website using the following URL: www.chickfling.com
 
 Enjoy matches!
 [<p align=center>Go up<p>](#42_www_ChickFling)
