@@ -1,45 +1,5 @@
-# 42_www_ChickFling
+# Chickfling
 Creating a dating site using React, Node JS and MySQL
-
-## Summary
-
-- [Intro](#intro)
-  - [Stack](#stack)
-  - [Features](#features)
-- [User account](#user-account)
-  - [User creation and authentication](#user-creation-and-authentication)
-  - [Forgot and change of password](#forgot-and-change-of-password)
-  - [User profile](#user-profile)
-    - [Complete profile](#complete-profile)
-    - [Information edition](#information-edition)
-    - [Pictures upload](#pictures-upload)
-      - [Profile picture](#profile-picture)
-      - [Picture delete](#picture-delete)
-   - [User account settings](#user-account-settings)
-    - [Preferences](#preferences)
-    - [Edit email and password](#edit-email-and-password)
-    - [Delete account](#delete-account)
-   - [Profiles management](#profiles-management)
-- [Profiles discovery](#profiles-discovery)
-  - [Display list](#display-list)
-  - [Matching algorithm](#matching-algorithm)
-- [Profiles search](#profiles-search)
-- [User interactions](#user-interactions)
-  - [Popularity score](#popularity-score)
-  - [Actions](#actions)
-    - [Real-time notifications](#real-time-notifications)
-    - [Like/Dislike and Match](#like/dislike-and-Match)
-    - [Real-time Chat](#real-time-chat)
-    - [Report and block profiles](#report-and-block-profiles)
-- [Responsive design](#responsive-design)
-- [Configuration and additionnal security](#configuration-and-additionnal-security)
-  - [Database](#database)
-  - [Security](#security)
-- [Run project](#run-project)
-  - [Environment setup](#environment-setup)
-  - [Create DB](#create-db)
-  - [Install packages and dependencies](#install-packages-and-dependencies)
-  - [Start servers and website](#start-servers-and-website)
 
 ## Intro
 
