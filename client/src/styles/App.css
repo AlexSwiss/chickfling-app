@@ -471,7 +471,7 @@ input[type="email"]:not(.browser-default):focus:not([readonly]) {
   margin-bottom: 30px;
   background-color: rgba(243, 241, 239, 0.1);
   border-radius: 20px;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 .logo-header-love {
