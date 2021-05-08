@@ -36,7 +36,7 @@ module.exports = {
     });
     
     var mailOptions = {
-      from: "alexyikeh@gmail.com",
+      from: "chickfling001@gmail.com",
       to: mail,
       subject: "ChickFling - Confirm mail",
       text: message,
@@ -87,7 +87,7 @@ module.exports = {
     });
     
     var mailOptions = {
-      from: "alexyikeh@gmail.com",
+      from: "chickfling001@gmail.com",
       to: mail,
       subject: "ChickFling - Reset password",
       text: message,
