@@ -30,15 +30,15 @@ module.exports = {
       port: 587,
       secure: false, // use SSL
       auth: {
-        user: 'alexyikeh@gmail.com',
-        pass: '@Rosecransb430'
+        user: 'chickfling001@gmail.com',
+        pass: 'Chickfling01@'
       }
     });
     
     var mailOptions = {
       from: "alexyikeh@gmail.com",
       to: mail,
-      subject: "ChickFling - COnfirm mail",
+      subject: "ChickFling - Confirm mail",
       text: message,
       contentType: "text/html"
     };
@@ -81,8 +81,8 @@ module.exports = {
       post: 587,
       secure: false, //use SSL
       auth: {
-        user: 'alexyikeh@gmail.com',
-        pass: '@Rosecransb430'
+        user: 'chickfling001@gmail.com',
+        pass: 'Chickfling01@'
       }
     });
     
