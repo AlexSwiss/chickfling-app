@@ -78,8 +78,8 @@ module.exports = {
       service: "gmail",
       type: "SMTP",
       host: "smtp.gmail.com",
-      post: 465,
-      secure: true,
+      post: 587,
+      secure: false, //use SSL
       auth: {
         user: 'alexyikeh@gmail.com',
         pass: '@Rosecransb430'
