@@ -5,10 +5,6 @@ Creating a dating site using React, Node JS and MySQL
 
 Objective of this project is to create a complete dating website that allows users to search, discover profiles according to their preferences and geolocation, show them some love with real-time likes, notifications and chat if both profiles match.
 
-Team of 2: Raphaël ([GitHub](https://github.com/M4sterCiel)) and I.
-
-See Trello board [here](https://trello.com/b/vxxZB9oL/42-matcha)
-
 ### Stack
 
 * Node JS (Express)
