@@ -1,53 +1,9 @@
-# 42_www_ChickFling
+# Chickfling
 Creating a dating site using React, Node JS and MySQL
-
-## Summary
-
-- [Intro](#intro)
-  - [Stack](#stack)
-  - [Features](#features)
-- [User account](#user-account)
-  - [User creation and authentication](#user-creation-and-authentication)
-  - [Forgot and change of password](#forgot-and-change-of-password)
-  - [User profile](#user-profile)
-    - [Complete profile](#complete-profile)
-    - [Information edition](#information-edition)
-    - [Pictures upload](#pictures-upload)
-      - [Profile picture](#profile-picture)
-      - [Picture delete](#picture-delete)
-   - [User account settings](#user-account-settings)
-    - [Preferences](#preferences)
-    - [Edit email and password](#edit-email-and-password)
-    - [Delete account](#delete-account)
-   - [Profiles management](#profiles-management)
-- [Profiles discovery](#profiles-discovery)
-  - [Display list](#display-list)
-  - [Matching algorithm](#matching-algorithm)
-- [Profiles search](#profiles-search)
-- [User interactions](#user-interactions)
-  - [Popularity score](#popularity-score)
-  - [Actions](#actions)
-    - [Real-time notifications](#real-time-notifications)
-    - [Like/Dislike and Match](#like/dislike-and-Match)
-    - [Real-time Chat](#real-time-chat)
-    - [Report and block profiles](#report-and-block-profiles)
-- [Responsive design](#responsive-design)
-- [Configuration and additionnal security](#configuration-and-additionnal-security)
-  - [Database](#database)
-  - [Security](#security)
-- [Run project](#run-project)
-  - [Environment setup](#environment-setup)
-  - [Create DB](#create-db)
-  - [Install packages and dependencies](#install-packages-and-dependencies)
-  - [Start servers and website](#start-servers-and-website)
 
 ## Intro
 
 Objective of this project is to create a complete dating website that allows users to search, discover profiles according to their preferences and geolocation, show them some love with real-time likes, notifications and chat if both profiles match.
-
-Team of 2: Raphaël ([GitHub](https://github.com/M4sterCiel)) and I.
-
-See Trello board [here](https://trello.com/b/vxxZB9oL/42-matcha)
 
 ### Stack
 
@@ -97,9 +53,6 @@ User input has been secured on front and back end with immediate feedback for fr
 
 Password will be hashed (sha512) with a salt for 5 iterations first before being saved in the DB.
 
-![User creation screen with input](https://user-images.githubusercontent.com/45239771/66834597-3e23ab00-ef5e-11e9-8e8c-51e5ca62706e.png)
-<p align=center><i>User creation screen with input</i></p>
-
 Before saving user, several checks will also be runned in the background, including:
 * Verifying if user already exists
 * Verifying if email is already used
@@ -117,8 +70,6 @@ The reset of password link will have a unique ID, which will be the latest link 
 
 User profiles are accessible via the `/user/username` url, so this means that each user has his own profile link and can share it. Also if user is on his own profile, he will be able to edit it, while if he is on someone else profile, he will be able to block or report that user.
 
-![User profiles](https://user-images.githubusercontent.com/45239771/66914452-1c3a2f00-f017-11e9-8c6e-ce658fa8cc74.jpg)
-<p align=center><i>User profiles</i></p>
 
 #### Complete profile
 
@@ -133,15 +84,9 @@ As said above, he will be invited to complete his profile from the discovery vie
 * City (list or geolocation)
 * Interests tags
 
-![User information edition](https://user-images.githubusercontent.com/45239771/66844629-e8a3ca00-ef6e-11e9-900d-68386108525d.png)
-<p align=center><i>User information edition</i></p>
-
 #### Pictures upload
 
 User is able to upload up to 5 pictures, he needs at least one to be able to match with someone. The upload is protected against wrong input checking the picture object size and format as well as file size to avoid having wrong images.
-
-![Pictures upload](https://user-images.githubusercontent.com/45239771/66844775-2dc7fc00-ef6f-11e9-9b1f-60e732028d6a.png)
-<p align=center><i>Pictures upload</i></p>
 
 ##### Profile picture
 
@@ -152,9 +97,6 @@ User will necessarily have a profile picture when uploading pictures, the first 
 User is able to delete a picture, if he deletes the picture set as default profile picture, it will make the closest picture the default profile one.
 
 ### User acccount settings
-
-![Account settings](https://user-images.githubusercontent.com/45239771/66845474-58ff1b00-ef70-11e9-96d7-b5d9a84f931c.png)
-<p align=center><i>Account settings</i></p>
 
 #### Preferences
 
@@ -172,22 +114,13 @@ User is able to delete his account as well, this will remove him from database a
 
 User is able to see the profiles he visited, liked and blocked in order to easily retrieve them.
 
-![Profiles management](https://user-images.githubusercontent.com/45239771/66847515-cb252f00-ef73-11e9-8ba7-6e5d5b64b159.png)
-<p align=center><i>Profiles management</i></p>
-
 ## Profiles discovery
 
 ### Display list
 
 Once the user has completed his profile, he will have access to the profiles discovery feature and be able to filter these results.
 
-![Profiles discovery](https://user-images.githubusercontent.com/45239771/66847856-5ef6fb00-ef74-11e9-8838-ad62ea2995e1.png)
-<p align=center><i>Profiles discovery</i></p>
-
 Each profile suggested will have a user card summarizing the personnality of the profile. User can click on the "3 dots" button to get more information such as the bio and full list of interest tags or go on the profile to see the "big picture".
-
-![User cards](https://user-images.githubusercontent.com/45239771/66848928-3ec83b80-ef76-11e9-98a5-79f7eaf8c923.png)
-<p align=center><i>User cards</i></p>
 
 Also the user is able to like a profile directly from the card, and the button will change of appearance.
 
@@ -207,8 +140,6 @@ This allows us to return a list of profiles that user might be interested in, or
 
 Just like the profiles discovery feature, the search will return a list of user and give user the ability to do a global search over the profiles registered on ChickFling app. The search page is very similar to what can be found on the profiles discovery one but he has access to the full list of profiles.
 
-![Profiles search](https://user-images.githubusercontent.com/45239771/66851379-e7789a00-ef7a-11e9-805d-f26cc3c3e6d2.png)<p align=center><i>Profiles search</i></p>
-
 ## User interactions
 
 ### Popularity score
@@ -227,17 +158,11 @@ Some actions have a negative impact, for example:
 
 Because users interact with each other, they need to be informed that someone else acted on him, so when someone views your profile, likes it or send you a message (if you previously matched), you will be informed directly with a badge count (depending on how many you received) on top of your menu. We used Websockets (socket.io) to make them real-time, also user won't have to refresh page to see new notifications, they will be automatically added.
 
-![Notifications](https://user-images.githubusercontent.com/45239771/66917528-d16fe580-f01d-11e9-98ef-921d499b4ddb.png)<p align=center><i>Notifications</i></p>
-
 If user sees a notification, it will be cleared in the menu as well so that users are always up-to-date.
-
-![Notifications menu opened](https://user-images.githubusercontent.com/45239771/66917710-31668c00-f01e-11e9-926d-e40ba982db20.png)<p align=center><i>Notifications menu opened</i></p>
 
 #### Like/Dislike and Match
 
 User can like other profiles to show him/her some interest, if both users like each other, it will create a match!
-
-![Profiles match](https://user-images.githubusercontent.com/45239771/66915355-1d6c5b80-f019-11e9-9bb5-15b373259029.png)<p align=center><i>Profiles match</i></p>
 
 User can also dislike someone if the love is gone.
 
@@ -246,8 +171,6 @@ User can also dislike someone if the love is gone.
 Once user match, they can talk to each other through a dedicated chat where they can retrieve all their matches and conversations.
 
 Messages are sent in real-time using websockets (socket.io) so that users receive messages once they are sent which simplifies conversations.
-
-![User chat](https://user-images.githubusercontent.com/45239771/66915583-a2f00b80-f019-11e9-8f06-2ae70ce765a2.png)<p align=center><i>User chat</i></p>
 
 #### Report and block profiles
 
@@ -260,18 +183,11 @@ Also a user can block/unblock another profile, if a profile has been blocked by 
 The platform has been completely designed with Responsive Design in mind with multiple breakpoints to accommodate most common screen sizes (from iPhone 6 range to desktop/tablet resolutions):
 * From 360px to 1000px
 
-![Responsive examples 1](https://user-images.githubusercontent.com/45239771/66919150-121d2e00-f021-11e9-895b-fa9bab36c0de.jpg)<p align=center><i>Responsive examples 1</i></p>
-
-![Responsive examples 2](https://user-images.githubusercontent.com/45239771/66919151-121d2e00-f021-11e9-8b1f-1a958555fd23.jpg)<p align=center><i>Responsive examples 2</i></p>
-
 ## Configuration and additionnal security
 
 ### Database
 
 Database is running on MySQL and we use PHPMyAdmin Web Interface to manage it. To get a set of users, we used RandomUsers API to generate a seed of around 800 users.
-
-![Database structure](https://user-images.githubusercontent.com/45239771/66919683-172ead00-f022-11e9-95fb-4d5c720424c2.png)
-<p><i>Database structure</i></p>
 
 ### Security
 
@@ -310,11 +226,9 @@ To run the project, you will also need to install some required packages and dep
 * Install backend packages/dependencies using command -> `npm i` inside the `back` folder
 * Install frontend packages/dependencies using command -> `npm i` inside the `front` folder
 
-### Start servers and website
+### website
 
-After having done both previous steps, you can start both MySQL Database from Bitnami software and Node JS server/React app using the following
-command -> `npm run dev` from the `back` folder, it will start both.
-Then, access the website using the following URL: https://localhost:3000/users/login
+access the website using the following URL: www.chickfling.com
 
 Enjoy matches!
 [<p align=center>Go up<p>](#42_www_ChickFling)
