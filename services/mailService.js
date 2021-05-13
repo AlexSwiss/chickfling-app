@@ -3,25 +3,17 @@ let nodemailer = require("nodemailer");
 module.exports = {
   registerMail: (mail, username, link) => {
     var message =
-      `
-    <html>
-      <head>
-        <meta charset="utf-8">
-      </head>
-      <body>
-        <p>Hi ` +
+      `Hi ` +
       username +
-      `,</p>
-        <br>
-        <p>We have received your registration on ChickFling.</p>
-        <p>We hope you will find what you are looking for on our platform.</p>
-        <p>To get started on ChickFling, please make sure to validate the following link: <a href="` +
+      `,
+      We have received your registration on ChickFling.
+
+      We hope you will find what you are looking for on our platform.
+      To get started on ChickFling, please make sure to validate the following link: ` +
       link +
-      `">Click here</a></p>
-        <br>
-        <p>See you soon on ChickFling.</p>
-      </body>
-    </html>`;
+      ` Click here
+
+        See you soon on ChickFling.`;
 
     var transporter = nodemailer.createTransport({
       service: 'gmail',
