@@ -170,7 +170,7 @@ module.exports = {
     }
   },
 
-  extractBlockedUsers: async (tab, userID) => {
+  extractBlockedUsers: async (tab, userID) => { 
     var blocked = await userModel.getBlockedUsersFromMyId(userID);
 
     var result = [];
