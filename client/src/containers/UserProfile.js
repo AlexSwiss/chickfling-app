@@ -90,7 +90,7 @@ class UserProfile extends Component {
                       src={
                         this.state.user.sexual_orientation === "bi"
                           ? ProfileBackgroundManWoman
-                          : (this.state.user.sexual_orientation === "hetero" &&
+                          : (this.state.user.sexual_orientation === "straight" &&
                               this.state.user.gender === "man") ||
                             (this.state.user.sexual_orientation === "homo" &&
                               this.state.user.gender === "woman")

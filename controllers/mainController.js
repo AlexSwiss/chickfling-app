@@ -17,7 +17,7 @@ module.exports = {
     var list;
 
     switch (orientation) {
-      case "hetero":
+      case "straight":
         list = await userModel.getSuggestions(
           gender == "man" ? 2 : 1,
           gender == "man" ? 2 : 1,

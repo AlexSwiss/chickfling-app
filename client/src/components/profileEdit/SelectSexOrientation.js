@@ -25,7 +25,7 @@ class SelectSexOrientation extends Component {
     if (
       e.target.value === "bi" ||
       e.target.value === "homo" ||
-      e.target.value === "hetero"
+      e.target.value === "straight"
     ) {
       this._isMounted &&
         this.setState({
@@ -60,11 +60,11 @@ class SelectSexOrientation extends Component {
           type="radio"
           id="radio-four"
           name="switch-two"
-          value="hetero"
+          value="straight"
           onChange={this.handleChange}
-          checked={this.state.sexOrientation === "hetero"}
+          checked={this.state.sexOrientation === "straight"}
         />
-        <label htmlFor="radio-four">Hetero</label>
+        <label htmlFor="radio-four">Straigh</label>
         <input
           type="radio"
           id="radio-five"
