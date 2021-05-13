@@ -4,11 +4,12 @@ var util = require("util");
 var pool = mysql.createPool({
   connectionLimit: 10,
   host: "us-cdbr-east-03.cleardb.com",
-  user: "b4222edb6881ec",
-  password: "3dad6f40",
-  database: "heroku_80160af9196f950",
+  user: "b60c59aac0b3e5",
+  password: "d1321fe0",
+  database: "heroku_3df5d70e3b230af",
   port: "3306"
 });
+
 
 pool.getConnection((err, connection) => {
   if (err) {
